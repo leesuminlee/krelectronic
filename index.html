@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Leesumin" content="width=device-width, initial-scale=1.0">
+  <title>한국전기산업연구원</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/weather-icons.min.css"><!-- 날씨 아이콘 플러그인 -->
+
+  <link rel="shortcut icon" href="./img/logo.ico">
+
+
+
+  <script src="https://kit.fontawesome.com/b51af6ee40.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script><!-- 다양한 인터페이스와 위젯, 효과를 사용할 수 있게 배포한 라이브러리 -->
+  <script src="js/swiper.min.js"></script><!-- swiper플러그인 -->
+
+
+  <script src="./js/jquery.easing.1.3.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="hidden">한국전기산업연구원</h1>
+    <nav>
+      <ul>
+        <li id="logo"><!--  class="fl"  -->
+          <a href="./index.html"></a>
+        </li><!-- logo -->
+
+        <li>
+          <a href="./sub01index.html">연구원 소개</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">ERIK은</a></li>
+                <li><a href="#none">인사말</a></li>
+                <li><a href="#none">비전</a></li>
+                <li><a href="#none">연혁</a></li>
+                <li><a href="#none">조직도</a></li>
+                <li><a href="#none">임원소개</a></li>
+                <li><a href="#none">CI</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">찾아오시는 길</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">경영공시</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- 연구원소개 -->
+
+        <li>
+          <a href="./sub02index.html">ERIK 홍보관</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">홍보자료</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">ERIK TV</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">ERIK INSIGHT</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">전기산업동향분석</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- ERIK 홍보관 -->
+
+        <li>
+          <a href="./sub03index.html">연구활동</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">공산비산정기준</a></li>
+                <li><a href="#none">표준시장단가</a></li>
+                <li><a href="#none">전기공사비지수</a></li>
+                <li><a href="#none">표준품셈</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">공사표준</a></li>
+                <li><a href="#none">COSD 소개</a></li>
+                <li><a href="#none">관리표준현황</a></li>
+                <li><a href="#none">표준소식</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">경기실사지수</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">산업동향</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구성과</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구제안</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li><!-- 연구활동 -->
+
+        <li>
+          <a href="./sub04index.html">기술지원</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">시방서/공법</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">시험 인증기관</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">개발 및 특허 현황</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- 기술지원 -->
+
+        <li>
+          <a href="./sub05index.html">ERIK와 함께</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">공지사항</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구원 소식</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">보도자료</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">묻고 답하기</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- ERIK와 함께 -->
+
+
+        <li>
+          <a href="#none" class="fa-solid fa-bag-shopping"></a>
+        </li>
+
+        <li>
+          <a href="./singin_index.html" class="fa-regular fa-user"></a>
+        </li>
+
+        <!-- **** search_icon **** -->
+        <li id="search_icon">
+          <a href="#none"  class="fa-solid fa-magnifying-glass"></a>
+          <div class="sub">
+            <aside class="sub_contents">
+              <input type="text" name="search" class="searchBox" placeholder="검색어를 입력해주세요">
+              <button type="button" class="btn-search">검색</button>
+            </aside>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="Quckmenu"><!-- 퀵메뉴 -->
+    <div id="Qucktep">
+      <a href="#none" id="sideMenuHandle">
+        <img src="./img/Qmain.svg" alt="퀵메뉴">
+      </a>
+
+      <div id="sub">
+        <div id="sub_contents">
+          <ul>
+            <li><a href="#none"><img src="./img/Qmenu01.svg" alt="채용소식"></a>
+              <div class="brand">채용소식</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu02.svg" alt="ERIK인사이트"></a>
+              <div class="brand">ERIK인사이트</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu03.svg" alt="웹툰"></a>
+              <div class="brand">웹툰</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu04.svg" alt="표준시장단가"></a>
+              <div class="brand">표준시장단가 </div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu05.svg" alt="시공정보시스템"></a>
+              <div class="brand">시공정보시스템</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="top_btn">
+    <a href="#none"><img src="./img/arrow_forward_ios.png" alt="맨위로 올라가기"></a>
+  </div>
+
+  <section><!-- section01 main Visul 영역  ============================================  -->
+    <h2 style="display: none;">야호</h2>
+    <div id="section01" class="cf">
+      <div id="brandVisual">
+        <ul>
+          <li class="visual_0">
+            <a href="#none">배너이미지1</a>
+          </li>
+          <li class="visual_1"><a href="#none">배너이미지2</a></li>
+          <li class="visual_2"><a href="#none">배너이미지3</a></li>
+          <li class="visual_3"><a href="#none">배너이미지4</a></li>
+        </ul>
+      </div>
+
+      <!-- 화살표 영역 -->
+      <div class="btnImg">
+        <img src="img/arrowFl.svg" class="prev fl" width="30" height="30" alt="오른쪽 화살표">
+        <img src="img/arrowFr.svg" class="next fr" width="30" height="30" alt="왼쪽 화살표">
+      </div>
+
+      <ul id="buttonList">
+        <li class="on"><a href="#none">배너1</a></li>
+        <li><a href="#none">배너2</a></li>
+        <li><a href="#none">배너3</a></li>
+        <li><a href="#none">배너3</a></li>
+      </ul><!-- 스크롤 동그라미 버튼 -->
+    </div>
+  </section><!-- ======================================================================= -->
+
+  <section id="section02" class="cf"><!-- section02  영역==============================  -->
+    <h2>야홍</h2>
+    <div class="icons">
+      <button>
+        <span>
+          <img src="./img/icon01.png" alt="icon1">
+          <img src="./img/icon01_on.png" alt="icon1hover"><br>
+          <span>비전</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon02.png " alt="icon2">
+          <img src="./img/icon02_on.png" alt="icon2hover"><br>
+          <span>연혁</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon03.png" alt="icon3">
+          <img src="./img/icon03_on.png" alt="icon3hover"><br>
+          <span>조직들</span>
+        </span>
+      </button>
+      <button>
+        <span> <!-- 오류 -->
+          <img src="./img/icon04.png" alt="icon4">
+          <img src="./img/icon04_on.png" alt="icon4hover"><br>
+          <span>임원소개</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon05.png" alt="icon5">
+          <img src="./img/icon05_on.png" alt="icon5hover"><br>
+          <span>표준시장단가</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon06.png" alt="icon6">
+          <img src="./img/icon06_on.png" alt="icon6hover"><br>
+          <span>표준개발협력기관</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon07.png" alt="icon7">
+          <img src="./img/icon07_on.png" alt="icon7hover"><br>
+          <span>시방서/공법</span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <img src="./img/icon08.png" alt="icon8">
+          <img src="./img/icon08_on.png" alt="icon8hover"><br>
+          <span>개발 및 특허</span>
+        </span>
+      </button>
+    </div>
+  </section><!-- ======================================================================= -->
+
+  <section id="section03" class="cf"><!-- section3  main Visul 영역  ================== -->
+    <div id="aboutID">
+      <div id="about">
+        <!-- 인트로 텍스트 영역 -->
+        <h4><strong>한국전기산업연구원</strong></h4>
+        <h2 id="s3logo" class="fl">
+          ERIK ABOUT
+          <img id="logoImg" class="fr" src="./img/logoImg.png" width="30" alt="">
+        </h2>
+
+        <p>
+          4차 산업시대에 새롭게 도약하는 전기산업<br>
+          한국전기산업연구원이 대한민국의 안전과 편리를 위한<br>
+          전기산업을 이끌어 갑니다.
+        </p>
+      </div>
+
+      <!-- 연구원 소식 영역 -->
+      <div id="about_news" class="cf">
+        <h3 class="hidden">연구원 소식</h3>
+
+        <ul class="tab cf">
+          <li class="active tab1"><a href="#none">공지사항</a></li>
+          <li class="tab2"><a href="#none">홍보자료</a></li>
+        </ul>
+
+        <div class="tab_con cf">
+          <div class="board">
+            <ul>
+              <li class="popup">
+                <a href="#none">2023년 연구원 계약직 채용 최종 합격자 공고</a>
+                <span>2023-09-05</span>
+              </li>
+              <li>
+                <a href="#none">&lt;2023년 정규직 및 계약직 채용 서류전형 합격자
+                  안내&gt;</a>
+                <span>2023-09-14</span>
+              </li>
+              <li>
+                <a href="#none">2023년도 한국전기산업연구원 정규직 및 계약직 채용 재공고</a>
+                <span>2023-08-16</span>
+              </li>
+              <li>
+                <a href="#none">&lt;2023년도 한국전기산업연구원 정규직 및 계약직 채용
+                  서류</a>
+                <span>2023-08-14</span>
+              </li>
+              <li>
+                <a href="#none">2023년도 한국전기산업연구원 정규직 및 계약직 채용 공고</a>
+                <span>2023-07-31</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gallery">
+            <ul>
+              <li class="copy">
+                <a href="#none">한국전기산업연구원 리플렛</a>
+                <span>2022-05-02</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 이미지 -->
+      <div id="about_img" class="fr">
+        <div id="illustration">
+          <!-- 일러스트 배경 -->
+          <div class="illustration1"></div>
+          <!-- 가운데 전구 -->
+          <div class="illustration2"></div>
+          <!-- 남자 -->
+          <div class="illustration3"></div>
+          <!-- 남자팔  -->
+          <div class="illustration4"></div>
+          <!-- 로봇팔 -->
+          <div class="illustration5"></div>
+          <!-- 여자머리카락 -->
+          <div class="illustration6"></div>
+          <!-- 여자 -->
+          <div class="illustration7"></div>
+          <!-- 톱리 -->
+          <div class="illustration8"></div>
+          <!-- 돋보기 -->
+          <div class="illustration9"></div>
+          <!--  -->
+          <div class="illustration10"></div>
+          <div class="illustration11"></div>
+          <div class="illustration12"></div>
+          <div class="illustration13"></div>
+          <div class="illustration14"></div>
+          <div class="illustration15"></div>
+        </div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </section><!-- ======================================================================= -->
+
+  <section id="section04" class="cf"><!-- section4  새로운소식 옆으로 슬라이드 영역  =================  -->
+    <div id="ERIKnews">
+      <div id="news04" class="fl">
+        <div class="NewName">
+          <div class="line"></div>
+          <h2>ERIK의<br>
+            <strong>새로운 소식</strong>을 전합니다
+          </h2>
+        </div>
+
+        <button>더알아보기</button>
+      </div><!-- 새로운 소식 -->
+
+      <div id="scoll_Menu" class="fr"><!-- 스크롤바 -->
+        <div id="scoll_Warp">
+          <div class="scroll_Box">
+            <p class="a04">New</p>
+            <h3>(특별기고) 분리발주는 '특혜'아닌<br>
+              '상식과 준법'의..</h3>
+            <p class="b04">수은주가 30도에 육박하던 지난 8월<br>
+              23일. 청주시청 앞으로 한무더기의 <br>
+              사람들이 쏟아져 나왔다.</p>
+            <p class="c04">2023-09-18</p>
+          </div>
+
+          <div class="scroll_Box">
+            <p class="a04">Hot</p>
+            <h3>업계 주요기관 협의회 등과 상생 <br>
+              발전 MOU 체결류재선</h3>
+            <p class="b04">협약식에 참여한 각 기관의 대표들이<br>
+              서명한 협약서를 들고 기념촬영을 하고 <br>
+              있다.</p>
+            <p class="c04">2023-09-11</p>
+          </div>
+
+          <div class="scroll_Box">
+            <p class="a04">New</p>
+            <h3>전기관련단체협의회, 제30차 회의 <br>
+              전기산업발전기</h3>
+            <p class="b04">전기관련단체협의회, 제30차 회의 <br>
+              전기산업발전기 본법 등 주요 현안 논의 <br>
+              김성관 전기공사공제조합 ...</p>
+            <p class="c04">2023-09-07</p>
+          </div>
+
+          <div class="scroll_Box">
+            <p class="a04">New</p>
+            <h3>힌국전기산업연구원-(주)씨에스<br>
+              이'근로자를 위한..
+            </h3>
+            <p class="b04">한국전기산업연구원-(주)씨에스이 <br>
+              근로자를 지켜줄 목보대 개발 배전 근로자 <br>
+              들이 달고사는 병 가운데 하나.</p>
+            <p class="c04">2013-09.05</p>
+          </div>
+        </div>
+
+        <div id="scrollBar"><!-- 스크롤 버튼 -->
+          <div id="bar"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- ======================================================================= -->
+
+  <section id="section05" class="cf">
+    <h2 style="display: none;">야호</h2>
+    <div id="div05">
+      <div id="img_Box" class="fl"></div>
+
+      <div id="insight" class="fr">
+        <p>ERIK INSIGHT</p>
+
+        <div class="wrap">
+          <div><img src="./img/inicon01.svg" alt="산업동향"></div>
+          <p class="p05-1">산업동향</p>
+          <p class="p05-2">일간 주간 한국전기산업연구소의 <br>
+            핫이슈 소식을 전합니다</p>
+        </div>
+
+        <div class="wrap">
+          <div><img src="./img/inicon02.svg" alt="시공정보시스템"></div>
+          <p class="p05-1">시공정보시스템</p>
+          <p class="p05-2">전기공사 시공정보시스템에 대해 <br>
+            알아보세요</p>
+        </div>
+
+
+        <div class="wrap">
+          <div><img src="./img/inicon03.svg" alt="표준소식"></div>
+          <p class="p05-1">표준소식</p>
+          <p class="p05-2">COSD(표준개발협력기관)에서 <br>
+            표준소식을 전합니다</p>
+        </div>
+
+        <div class="wrap">
+          <div><img src="./img/inicon04.svg" alt="표준시장단가"></div>
+          <p class="p05-1">표준시장단가</p>
+          <p class="p05-2">공사비산정기준으로 표준시장 <br>
+            단가를 전합니다</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- ======================================================================= -->
+
+  <section id="section06" class="cf">
+    <h2 style="display: none;">야호</h2>
+    <div id="wrap06">
+      <ul>
+        <li><a href="https://www.ecfc.co.kr/main.do"><img src="./img/company01.jpg" height="20" alt="전기공사공제조합"></a>
+        </li>
+        <li><a href="https://www.electimes.com/"><img src="./img/company02.jpg" height="20" alt="전기신문"></a></li>
+        <li><a href="https://www.keea.or.kr/head/main/main.do"><img src="./img/company03.jpg" height="20"
+              alt="한국전기기술인협회"></a></li>
+        <li><a href="https://www.kea.kr/front/"><img src="./img/company04.jpg" height="20" alt="대한전기협회"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footerBox" class="cf">
+      <div id="fLogo" class="fl"><a href="./index.html"><img src="./img/logo.svg" alt="한국전기산업연구원"></a></div>
+
+      <div id="fWeap">
+        <div class="fw01">
+          <ul>
+            <li>이용약관</li>
+            <li>개인정보취급방침</li>
+            <li>이메일주소 무단수집 거부</li>
+          </ul>
+        </div>
+
+
+        <div class="fw02">
+          <ul>
+            <li>(28220) 충청북도 청주시 흥덕구 오송읍 오송생명8로 9</li>
+            <li>한국전기산업연구원</li>
+            <li>TEL : 043-711-4450 FAX : 043-711-4499</li>
+            <li>COPYRIGHT ⓒ ERIK ALL RIGHTS RESERVED.</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <div id="fBrands" class="fr">
+        <ul>
+          <li><a href="https://pf.kakao.com/_bAlxcs"><img src="./img/sns_01.png" alt="카카오톡"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_02.png" alt="인스타그램"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_03.png" alt="페이스북"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_04.png" alt="유튜브"></a></li>
+          <li><a href="https://blog.naver.com/erik_insight"><img src="./img/sns_05.png" alt="네이버밴드"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <section id="weather">
+    <h2 style="display: none;">야호</h2>
+    <div>
+      <div class="api">
+        <div class="api_wrap">
+          <ul>
+            <li class="cicon"></li>
+            <li class="temp_info"></li><!-- temp현재의 기온을 넣을 때 주로 사용함 -->
+            <li class="date"></li> <!-- 현재날짜와 시간 -->
+            <li class="cname"></li> <!-- 도시 이름 -->
+            <li class="ctemp"> 현재온도 :</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> <!-- 날씨 -->
+
+
+
+
+
+</body>
+
+</html>

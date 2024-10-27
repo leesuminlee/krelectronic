@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업창</title><!-- 얼마동안 안 보일지 쿠키에 저장을 하라고 명령을 시키는 것 -->
+  <script>
+    /* 쿠키값 설정 */
+    function setCookie(name, value, expiredays) {
+      //setCookie쿠키를 생성할 때 사용
+      //(쿠키이름 (name), 쿠키값(value);경로(path), 만료일 (expiredays)) 
+      var todayDate = new Dare(); //new 새로운 객체로 날짜를 받아옴
+      todayDate.setDate(todayDate.getDate() + expiredays); //현지시간 + 만료일(시간)
+
+      document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+      //익스케이프문자(값) + 경로 + 오늘날짜를 문자열(toGMTString)로 변환 + ;
+    }
+
+    function closeWin() {
+      if (document.frm.event.checked) { //체크박스를 클릭하는 이벤트가 발생되면,
+        setCookie("meno", "no", 60); //60일간 쿠키적용
+      }
+    }
+
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: pretendard, '맑은 고딕', 돋움;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  
+    p {
+      display: none;
+    }
+  
+    .fl {
+      float: left;
+    }
+  
+    .fr {
+      float: right;
+    }
+  
+    .cl {
+      clear: left;
+    }
+  
+    .cf:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+    #popup_box {
+      background: url(./img/windowImg.svg) no-repeat center;
+      width: 485px;
+      height: 510px;
+    }
+  
+    #popup_cont>button {
+      margin-top: 170px;
+      margin-left: 52px;
+      padding: 5px 18px;
+      border-radius: 15px;
+      border: 1px solid salmon;
+      background-color: darkorange;
+    }
+  
+    #popup_cont>button:hover {
+      background-color: orangered;
+    }
+  
+    form {
+      margin-top: 280px;
+      width: 100%;
+      height: 30px;
+      background-color: #3a3a3a;
+      border-top: 1px solid darkorange;
+      line-height: 30px;
+      color: #ffffff;
+    }
+   
+    input{
+      margin-top: 8px;
+      margin-right: 15px;
+    }
+    input:nth-child(1){
+      margin-left: 20px;
+    }
+    input:nth-child(2){
+      margin-right: 40px;
+      margin-top: 2px;
+      padding: 2px 15px;
+      border-radius: 15px;
+      background: #ffffff;
+    }
+  
+  </style>
+</head>
+
+
+<body onunload="closeWin()"><!-- onload는 브라우저 열리자 마자 | onunload 브라우저 열어도 안 열리도록 -->
+  <p>윈도우 팝업</p>
+  <div id="popup_box" class="cf">
+    <div id="popup_cont">
+      <button><span>Click!</span></button>
+    </div> 
+
+    <form name="frm"> <!-- 연동이 되도록 넣어줌 위에도 frm이 있음 -->
+      <input type="checkbox" name="event" class="fl"> 오늘 하루 그만보기
+      <input type="button" value="닫기" onclick="self.close()" class="fr"> <!-- self.close() 내가 알아서 닫을게~^^ -->
+    </form>
+  </div>
+
+
+</body>
+
+</html>

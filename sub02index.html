@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERIK 홍보관</title>
+  <link rel="stylesheet" href="./css/sub02style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo.ico">
+    
+  <script src="https://kit.fontawesome.com/b51af6ee40.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="./js/sub02script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="hidden">한국전기산업연구원</h1>
+    <nav>
+      <ul>
+        <li id="logo"><!--  class="fl"  -->
+          <a href="./index.html"></a>
+        </li><!-- logo -->
+
+        <li>
+          <a href="./sub01index.html">연구원 소개</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">ERIK은</a></li>
+                <li><a href="#none">인사말</a></li>
+                <li><a href="#none">비전</a></li>
+                <li><a href="#none">연혁</a></li>
+                <li><a href="#none">조직도</a></li>
+                <li><a href="#none">임원소개</a></li>
+                <li><a href="#none">CI</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">찾아오시는 길</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">경영공시</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- 연구원소개 -->
+
+        <li>
+          <a href="./sub02index.html">ERIK 홍보관</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">홍보자료</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">ERIK TV</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">ERIK INSIGHT</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">전기산업동향분석</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- ERIK 홍보관 -->
+
+        <li>
+          <a href="./sub03index.html">연구활동</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">공산비산정기준</a></li>
+                <li><a href="#none">표준시장단가</a></li>
+                <li><a href="#none">전기공사비지수</a></li>
+                <li><a href="#none">표준품셈</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">공사표준</a></li>
+                <li><a href="#none">COSD 소개</a></li>
+                <li><a href="#none">관리표준현황</a></li>
+                <li><a href="#none">표준소식</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">경기실사지수</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">산업동향</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구성과</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구제안</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li><!-- 연구활동 -->
+
+        <li>
+          <a href="./sub04index.html">기술지원</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">시방서/공법</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">시험 인증기관</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">개발 및 특허 현황</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- 기술지원 -->
+
+        <li>
+          <a href="./sub05index.html">ERIK와 함께</a>
+          <div class="sub">
+            <div class="sub_contents">
+              <ul>
+                <li><a href="#none">공지사항</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">연구원 소식</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">보도자료</a></li>
+              </ul>
+              <ul>
+                <li><a href="#none">묻고 답하기</a></li>
+              </ul>
+            </div>
+          </div>
+        </li><!-- ERIK와 함께 -->
+
+
+        <li>
+          <a href="#none" class="fa-solid fa-bag-shopping"></a>
+        </li>
+
+        <li>
+          <a href="./singin_index.html" class="fa-regular fa-user"></a>
+        </li>
+
+        <!-- **** search_icon **** -->
+        <li id="search_icon">
+          <a href="#none"  class="fa-solid fa-magnifying-glass"></a>
+          <div class="sub">
+            <aside class="sub_contents">
+              <input type="text" name="search" class="searchBox" placeholder="검색어를 입력해주세요">
+              <button type="button" class="btn-search">검색</button>
+            </aside>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 퀵메뉴 영역 -->
+  <div id="Quckmenu"><!-- 퀵메뉴 -->
+    <div id="Qucktep">
+      <a href="#none" id="sideMenuHandle">
+        <img src="./img/Qmain.svg" alt="퀵메뉴">
+      </a>
+
+      <div id="sub">
+        <div id="sub_contents">
+          <ul>
+            <li><a href="#none"><img src="./img/Qmenu01.svg" alt="채용소식"></a>
+              <div class="brand">채용소식</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu02.svg" alt="ERIK인사이트"></a>
+              <div class="brand">ERIK인사이트</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu03.svg" alt="웹툰"></a>
+              <div class="brand">웹툰</div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu04.svg" alt="표준시장단가"></a>
+              <div class="brand">표준시장단가 </div>
+            </li>
+            <li><a href="#none"><img src="./img/Qmenu05.svg" alt="시공정보시스템"></a>
+              <div class="brand">시공정보시스템</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="top_btn">
+    <a href="#none"><img src="./img/arrow_forward_ios.png" alt="맨위로 올라가기"></a>
+  </div><!-- 맨 위로 올라가기 -->
+
+
+  <section id="section01" class="cf">
+    <h2>ERIK 홍보관</h2>
+    <p>ERIK Publicity Center</p>
+  </section> <!-- ERIK 홍보관 -->
+
+
+
+  <section id="section02" class="cf">
+    <h2 class="hidden">아코디언</h2>
+    <div id="accordion_Menu" class="fl"><!-- 아코디언 -->
+      <ul id="accordion" class="accordion">
+        <li class="show">
+          <div class="menu">홍보자료</div>
+        </li>
+        <li>
+          <div class="menu">ERIK TV</div>
+        </li>
+        <li>
+          <div class="menu">전기 웹툰</div>
+        </li>
+        <li>
+          <div class="menu">ERIK INSIGHT</div>
+        </li>
+        <li>
+          <div class="menu">전기산업동향분석</div>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- section02 본문=============== -->
+    <div id="history">
+
+
+      <div id="logo_Navi" class="fr">
+        <div id="Nlogo">
+          <p>한국산업연구원</p>
+          <p><img src="./img/logo.svg" alt="로고"></p>
+        </div><!-- 로고 영역 -->
+
+        <div id="navigation" class="fr">
+          <ul>
+            <li class="homeIcon">
+              <img src="./img/homeicon.svg" alt="홈으로 돌아가기">
+            </li>
+            <li><a href="./index.html">HOME</a></li>
+            <li class="frIcon">
+              <img src="./img/Nriicon.svg" alt="왼쪽 화살표 아이콘">
+            </li>
+            <li><a href="./sub02index.html">ERIK 홍보관</a></li>
+            <li class="frIcon">
+              <img src="./img/Nriicon.svg" alt="왼쪽 화살표 아이콘">
+            </li>
+            <li><a href="./sub02index.html">홍보자료</a></li>
+          </ul>
+        </div><!-- 네비게이션 영역 -->
+      </div><!-- 로고랑 네이게이견 영역 -->
+
+
+      <div id="circle3">
+        <ul>
+          <li>
+            <p>전기산업의 <br>
+              건전한 육성 발전과 <br>
+              경쟁력 제고 위한 연구</p>
+          </li>
+          <li>
+            <p>전기공사업 및 <br>
+              관련분야(정책,제도) <br>
+              관한 연구</p>
+          </li>
+          <li>
+            <p>전기시공기술 및 <br>
+              표준개발에 <br>
+              관한 연구</p>
+          </li>
+        </ul>
+      </div><!-- 동그라미 3개 영역 -->
+
+      <div id="scroll_Menu">
+        <div id="scoll_Warp">
+          <div class="scroll_line">
+            <ul>
+              <li>
+                <p>a</p>
+              </li>
+              <li>
+                <p>1</p>
+              </li>
+              <li>
+                <p>2</p>
+              </li>
+              <li>
+                <p>3</p>
+              </li>
+              <li>
+                <p>4</p>
+              </li>
+              <li>
+                <p>5</p>
+              </li>
+              <li>
+                <p>6</p>
+              </li>
+              <li>
+                <p>7</p>
+              </li>
+              <li>
+                <p>8</p>
+              </li>
+              <li>
+                <p>9</p>
+              </li>
+              <li>
+                <p>10</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="scroll_Box">
+            <p class="a04">2008</p>
+            <p class="b04">한국전기산업연구원 개원 <br>
+              전기부문실적공사비관리기관지정 <br>
+              (산업통상자원부)</p>
+          </div><!-- 1 -->
+
+
+          <div class="scroll_Box">
+            <p class="a04">2009</p>
+            <p class="b04">전기공사비지수 통계작성지정기관 <br>
+              지정(통계청) 국가기술표준원 <br>
+              IEC TC78 간사기관 지정</p>
+          </div><!-- 2 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2010</p>
+            <p class="b04">국가기술표준원 표준협력개발기관 <br>
+              (COSD) 지정</p>
+          </div><!-- 3 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2011</p>
+            <p class="b04">전기안전연구원과 양해각서 체결</p>
+          </div><!-- 4 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2013</p>
+            <p class="b04">전기설비 시공표준(KEIS)개발</p>
+          </div><!-- 5 -->
+
+
+          <div class="scroll_Box">
+            <p class="a04">2015</p>
+            <p class="b04">전기공사 표준시장단가 관리기관<br>
+              지정(산업통상자원부)</p>
+          </div><!-- 6 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2017</p>
+            <p class="b04">ERIK 인사이트(정보간행물) 발간<br>
+              전기공사 시방서 운영시스템 구축</p>
+          </div><!-- 7 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2019</p>
+            <p class="b04">전기공사 시공정보시스템 운영</p>
+          </div><!-- 8 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2021</p>
+            <p class="b04">한국에너지공단 업무협약 체결</p>
+          </div><!-- 9 -->
+
+          <div class="scroll_Box">
+            <p class="a04">2022</p>
+            <p class="b04">한국전력기술 업무협약 체결</p>
+          </div><!-- 10 -->
+        </div>
+
+
+      </div><!--스크롤 영역 -->
+
+    </div>
+  </section><!-- 역사 -->
+
+  <section id="section03" class="cf">
+    <div>
+      <div id="titile">
+        <h3 id="hidden">ERIK VISION</h3>
+        <p>혁신적 연구성과 창출 및 건강한 조직문화를 조성하여전기산업의 성장. <br>
+          발전을 지원하는 전문연구기</p>
+      </div><!-- 비전 -->
+
+      <div id="box03">
+        <div class="box">
+          <div class="imgBox"></div>
+          <div class="textBox">
+            <h3>전기산업의 <br>
+              혁신성장기반 구축</h3>
+            <ul>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 차세대 전력망분야 기술개발
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 전력계통 변화에 따른 기술 및 <br>
+                &nbsp; 법제도 연구
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 전기산업계의 경쟁력 강화를 위한 <br>
+                &nbsp; 정책연구
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- 전기산업의 혁신성장기반 구축 -->
+
+        <div class="box">
+          <div class="imgBox"></div>
+          <div class="textBox">
+            <h3>전기산업분야 <br>
+              연구개발 기능 강화</h3>
+            <ul>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 신규 정부위임업무기관 추진
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 시험, 인증기관 추진
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 전기업계동향 분석자료 제공
+              </li>
+            </ul>
+          </div>
+        </div><!-- 전기산업분야 연구개발 기능 강화 -->
+
+        <div class="box">
+          <div class="imgBox"></div>
+          <div class="textBox">
+            <h3>성과창출을 위한 <br>
+              운영체계 내실화</h3>
+            <ul>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 유관기관 유대 강화
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 경영환경 개선 및 조직혁신
+              </li>
+              <li>
+                <img src="./img/ul_li.svg" alt="동그리"> 협회 및 조합과의 관계 내실화
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- 박스 세개 있는 영역 -->
+
+      <div id="banner">
+        <p>그린뉴딜, 디지털 전환, 신재생에너지의 확대보급 등 전략계통의 패러다임 변화로 다양한 설비와 기자재 도입으로 <br> 시험 및 검증에 대한 수요가 지속적으로 발생함에 따라 전기산업분야 시험인증사업
+          추진</p>
+
+        <div class="backImg">
+          <img src="./img/geometricfl.svg" alt="왼쪽 기하학도형" class="fl">
+          <img src="./img/geometricfr.svg" alt="오른쪽 기하학도형" class="fr">
+        </div>
+      </div><!-- 베너 영역 -->
+
+    </div>
+  </section><!-- 비전 -->
+
+  <section id="section04" class="cf">
+    <div id="mapBack">
+      <h3 class="hidden">왐방빤</h3>
+      <div id="imgMap" class="fl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d641.3917936254668!2d126.86155943471758!3d37.55157547421828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c1b6f74b105%3A0xe7f943999f02dc64!2zKOyerCntlZzqta3soITquLDsgrDsl4Xsl7Dqtazsm5A!5e0!3m2!1sko!2sus!4v1698642079805!5m2!1sko!2sus"
+          width="360" height="288" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+      <div id="text_Map" class="fr">
+        <div class="location">
+          <p>LOCATION</p>
+          <p>충청북도 청주시 흥덕구 오송읍 오송생명8로 9 한국전기산업연구원</p>
+        </div>
+
+        <div class="map">
+          <p>오시는 길</p>
+          <ul class="busmap">
+            <li class="bus"><img src="./img/bus.svg" alt="버스">&nbsp; 오송역(KTX)</li>
+            <li class="arowefr"><img src="./img/arrow_forward.svg" width="20" alt="왼쪽">&nbsp; 515-2 마을버스 탑승</li>
+            <li class="arowefr"><img src="./img/arrow_forward.svg" width="20" alt="왼쪽"> &nbsp; 동아전기 하차</li>
+            <li class="arowefr"><img src="./img/arrow_forward.svg" width="20" alt="왼쪽"> &nbsp; 도보 5분</li>
+            <li class="arowefr"><img src="./img/arrow_forward.svg" width="20" alt="왼쪽"> &nbsp; 한국전기산업연구원</li>
+          </ul>
+
+          <ul class="carmap">
+            <li class="bus"><img src="./img/car.svg" alt="차">&nbsp; 오송역(KTX)</li>
+            <li class="arowefr"><img src="./img/arrow_forward.svg" width="20" alt="왼쪽"> &nbsp; 오송생명8로 (추천경로)3.5km</li>
+          </ul>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section><!-- 오는 길 -->
+
+  <footer>
+    <div id="footerBox" class="cf">
+      <div id="fLogo" class="fl"><a href="./index.html"><img src="./img/logo.svg" alt="한국전기산업연구원"></a></div>
+
+      <div id="fWeap">
+        <div class="fw01">
+          <ul>
+            <li>이용약관</li>
+            <li>개인정보취급방침</li>
+            <li>이메일주소 무단수집 거부</li>
+          </ul>
+        </div>
+
+
+        <div class="fw02">
+          <ul>
+            <li>(28220) 충청북도 청주시 흥덕구 오송읍 오송생명8로 9</li>
+            <li>한국전기산업연구원</li>
+            <li>TEL : 043-711-4450 FAX : 043-711-4499</li>
+            <li>COPYRIGHT ⓒ ERIK ALL RIGHTS RESERVED.</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <div id="fBrands" class="fr">
+        <ul>
+          <li><a href="https://pf.kakao.com/_bAlxcs"><img src="./img/sns_01.png" alt="카카오톡"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_02.png" alt="인스타그램"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_03.png" alt="페이스북"></a></li>
+          <li><a href="https://www.erik.re.kr/#"><img src="./img/sns_04.png" alt="유튜브"></a></li>
+          <li><a href="https://blog.naver.com/erik_insight"><img src="./img/sns_05.png" alt="네이버밴드"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
